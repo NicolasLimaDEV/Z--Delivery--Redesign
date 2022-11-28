@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: sans-serif;
+    background: #FAFAFA;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+li a{
+    cursor: pointer;
+}
+
+:root{
+    --cinza: #333333;
+    --amarelo: #FFCC00;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 72px;
+    background-color: var(--cinza);
+}
+
+.logo{
+    margin-left: 18%;
+    width: 130px;
+}
+
+.btn-entrar{
+    margin-right: 18%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 1px solid var(--amarelo);
+    color: var(--amarelo);
+    border-radius: 50px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.btn-entrar:hover{
+    background-color: var(--amarelo);
+    color: var(--cinza);
+}
+
+/* Main Banner Title */
+.banner-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 464px;
+    background-color: var(--amarelo);
+}
+
+.banner-principal h1{
+    width: 30vw;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.banner-principal input{
+    width: 600px;
+    margin-top: 1rem;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    border: 1px solid var(--cinza);
+}
+
+.banner-principal input::placeholder{
+    font-size: 18px;
+    padding: 8px;
+}
+
+/* Como funciona */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+section h1{
+    margin-top: 2.5rem;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.como-funciona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.como-funciona-card{
+    margin-top: 2rem;
+    text-align: center;
+    width: 350px;
+    padding: 0 30px;
+    margin: 2rem 35px;
+}
+
+.como-funciona-card img{
+    width: 120px;
+}
+
+.como-funciona-card h3{
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 1.5rem;
+}
+
+.como-funciona-card p{
+    color: #666666;
+}
+
+.produtos-disponiveis{
+    margin: 1rem auto;
+    text-align: center;
+    width: 1150px;
+    background-color: #F3E8BF;
+}
+
+.produtos-disponiveis h1{
+    font-size: 22px;
+    margin-top: 1.5rem;   
+    margin-bottom: 1rem;
+}
+
+.produtos-disponiveis button{
+    border: none;
+    outline: none;
+    background-color: var(--amarelo);
+    text-transform: uppercase;
+    border: 1px solid var(--amarelo);
+    color: var(--cinza);
+    border-radius: 50px;
+    padding: 14px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.produtos h1{
+    font-size: 23px;
+    margin-bottom: 2rem;
+}
+
+.produtos-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: #FFF;
+    width: 260px;
+    height: 300px;
+    margin: .5rem 1rem;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px #ccc;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h3{
+    margin: 1.2rem;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Produtos 2 */
+.produtos-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.produto-col{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 .5rem;
+}
+
+.produto-row{
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 10px;
+    width: 380px;
+    height: 72px;
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+.produto-row img{
+    width: 27px;
+}
+
+.produto-row span{
+    padding: 0 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Atendimentos Regiões */
+.atendimento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    padding: 20px 30px;
+}
+
+.atendimento h2{
+    font-weight: 400;
+    text-align: center;
+}
+
+.atendimento-col{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.atendimento-row{
+    padding: 32px;
+}
+
+.atendimento-row ul{
+    list-style: none;
+}
+
+.atendimento-row li{
+    padding: 12px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Download Apps */
+.download{
+    width: 100vw;
+    height: 50vh;
+    background: url("imagens/banner.avif") no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+
+.download-info{
+    margin-left: 50vw;
+}
+
+.download h1{
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.download p{
+    margin-bottom: 1rem;
+}
+
+.download-imagens img{
+    width: 190px;
+    height: 56px;
+}
+
+/* Voltar ao topo */
+.voltar-ao-topo{
+    width: 100vw;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #666666;
+}
+
+.voltar-ao-topo a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    padding: 30px;
+    background-color: #333333;
+}
+
+.col-1, .col-2, .col-3, .col-4{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.col-1{
+    margin-top: -100px;
+}
+
+.col-1 img{
+    width: 172px;
+}
+
+.social svg{
+    margin: 0 12px;
+}
+
+.col-2 h3, .col-3 h3, .col-4 h3{
+    font-weight: bold;
+    color: #fff;
+    font-size: 17px;
+}
+
+.col-2 ul, .col-3 ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.col-2 li{
+    text-decoration: underline;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+.col-3{
+    margin-top: -75px;
+}
+
+.col-3 li{
+    text-decoration: underline;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.col-3 h3{
+    margin-top: 35px;
+}
+
+.col-4{
+    margin-top: -50px;
+}
+
+.col-4 img{
+    width: 150px;
+    padding-bottom: 15px;
+}
+
+.col-4 h3{
+    margin-bottom: 20px;
+}
+
+.footer-2{
+    height: 50px;
+    padding: 35px;
+}
+
+.footer-col-1 a{
+    font-size: 14px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.footer-col-2{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+
+.footer-col-3 h3{
+    color: #fff;
+    font-size: 15px;
+}
+
+.social{
+    margin-top: 20px;
+}
